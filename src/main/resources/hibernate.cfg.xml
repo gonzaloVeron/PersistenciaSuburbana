@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- Database connection settings -->
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/bichomon?serverTimezone=UTC</property>
+		<property name="connection.username">spore</property>
+		<property name="connection.password">tiranosaurio0</property>
+
+		<!-- SQL dialect -->
+		<property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+
+		<!-- Disable the second-level cache -->
+		<property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+
+		<!-- Echo all executed SQL to stdout -->
+		<property name="show_sql">true</property>
+
+		<property name="hibernate.hbm2ddl.auto">create-drop</property>
+
+		<mapping class="ar.edu.unq.epers.bichomon.backend.model.entrenador.Entrenador" />
+		<mapping class="ar.edu.unq.epers.bichomon.backend.model.bicho.Bicho" />
+		<mapping class="ar.edu.unq.epers.bichomon.backend.model.especie.Especie" />
+		<mapping class="ar.edu.unq.epers.bichomon.backend.model.ubicacion.Dojo" />
+		<mapping class="ar.edu.unq.epers.bichomon.backend.model.ubicacion.Guarderia" />
+		<mapping class="ar.edu.unq.epers.bichomon.backend.model.ubicacion.Pueblo" />
+		<mapping class="ar.edu.unq.epers.bichomon.backend.model.campeon.Campeon" />
+		<mapping class="ar.edu.unq.epers.bichomon.backend.model.ubicacion.EspeciePosible" />
+		<mapping class="ar.edu.unq.epers.bichomon.backend.model.nivel.Nivel" />
+		<mapping class="ar.edu.unq.epers.bichomon.backend.model.condicion.CondicionCompuesta" />
+		<mapping class="ar.edu.unq.epers.bichomon.backend.model.condicion.BasadoEnVictoria" />
+		<mapping class="ar.edu.unq.epers.bichomon.backend.model.condicion.BasadoEnNivel" />
+		<mapping class="ar.edu.unq.epers.bichomon.backend.model.condicion.BasadoEnEnergia" />
+		<mapping class="ar.edu.unq.epers.bichomon.backend.model.condicion.BasadoEnEdad" />
+		<mapping class="ar.edu.unq.epers.bichomon.backend.model.experiencia.Experiencia" />
+
+	</session-factory>
+</hibernate-configuration>

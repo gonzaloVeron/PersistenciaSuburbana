@@ -1,0 +1,150 @@
+.bichoPedia {
+  min-height: 487px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#content{
+    background: #369991;
+    height: 100%;
+    min-height: calc(100vh + 400px);
+}
+
+.bichoPedia #logo {
+    height: 200px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.bichoPedia .title{
+    color: white;
+    top: 100px;
+    position: relative;
+}
+
+.bichoPedia .boxes {
+    position: absolute;
+    overflow: scroll;
+    width: 100%;
+    top: 230px;
+}
+
+.bichoPedia .boxes .center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.especieFullBoxModal {
+  /*width: 450px !important;*/
+}
+
+.especieFullBox {
+  padding: 10px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 20px;
+}
+.especieFullBox .especieNombre {
+  color: #C60019;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 50px;
+  -webkit-text-stroke: 1px black;
+    padding-bottom: 20px;
+}
+.especieFullBox dl {
+   float:left;
+   width: 100%;
+}
+.especieFullBox dt, .especieForm dt {
+   float:left;
+   clear:left;
+   text-align:right;
+   width:115px;
+   color:#C60019;
+}
+.especieFullBox dd, .especieForm dd {
+   float:left;
+   margin-left: 5px;
+   color:#999
+}
+
+.especieFullBox .crearBicho {
+  clear:both;
+}
+
+.especieForm {
+  overflow: hidden;
+  margin: 10px;
+}
+.especieForm dl {
+   width: 500px;
+}
+.submitEspecie {
+  clear:both;
+  float: right;
+  margin-top: 10px;
+}
+
+.bichoPedia .especieBox {
+    text-align: center;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.5);;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.bichoPedia .especieBox:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bichoPedia .especieBox img {
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+
+.fade.in{
+    opacity: 1!important;
+}
+
+.modal.fade .modal-dialog{
+    transform: translate(0,0%)!important;
+}
+
+.modal-backdrop.fade.in{
+    /*background-color: transparent!important;*/
+    opacity: 0.5!important;
+}
+
+.image_form{
+    width: 100%;
+}
+
+.col{
+    float: left;
+    padding-right: 0px!important;
+    padding-left: 0px!important;
+}
+
+
+@media (min-width: 576px){
+    .especieFullBox img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (min-width: 920px){
+    .especieFullBox img {
+        height: 400px;
+        width: 400px;
+    }
+}
